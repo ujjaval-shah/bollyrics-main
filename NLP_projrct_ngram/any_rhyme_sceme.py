@@ -83,19 +83,22 @@ for i in types:
     n_dict_for_rhyme[i] = new_keys[randlist[c]]
     c = c + 1
 
+print(n_dict_for_rhyme)
+
 main_dic_for_rhyme = {}
 for i in types:
     main_dic_for_rhyme[i] = []
     for j in (Rand(0,len(temp_list[n_dict_for_rhyme[i]]),stanza)):
         main_dic_for_rhyme[i].append(temp_list[n_dict_for_rhyme[i]][j])
 
+print(main_dic_for_rhyme)
 
 rhyme = []
 for i in range(stanza):
     for j in r_scheme:
         rhyme.append(main_dic_for_rhyme[j][i])
     rhyme.append(" ")
-
+print(rhyme)
 
 
 ### rhyme deciding ends
